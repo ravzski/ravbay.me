@@ -1,13 +1,13 @@
 Frontend in AngularJS,APIs in Rails
 
-A [ravbay.me](http://ravbay.me)
+[ravbay.me](http://ravbay.me)
+
 # Pre-requisites
 
 - [angular.js](https://angularjs.org/)
 - [node](https://nodejs.org)
 - [bower](http://bower.io/)
 - [rails](https://rubyonrails.org)
-
 
 # Installation
 
