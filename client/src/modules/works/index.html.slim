@@ -1,0 +1,24 @@
+.works-container.anim-slide-right
+  .panel
+    .panel-head
+      h1 Works
+      a.btn-close href="/"
+    .panel-body
+      ul.project-nav
+        li
+          a ng-class="{'current': current =='all'}" ng-click="filter('all')" All
+        li
+          a ng-class="{'current': current =='web'}" ng-click="filter('web')" Web
+        li
+          a ng-class="{'current': current =='mobile'}" ng-click="filter('mobile')" Mobile
+
+
+      .project-row ng-style="projHeight"
+        .project-pane.fade ng-repeat="project in projects" ng-animate="'fade'"
+          .project-item
+            .project-img-holder
+              img ng-src="{{project.thumbnail}}"
+            .project-name
+              a ng-bind-html="project.name " ng-href="{{project.url}}" target="_blank"
+            .project-desc
+              span ng-bind-html="project.details"

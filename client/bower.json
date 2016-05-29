@@ -1,0 +1,28 @@
+{
+  "name": "client",
+  "version": "0.0.0",
+  "authors": [
+    "rav bay <ravzski@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "=1.4.5",
+    "angular-animate": "=1.4.5",
+    "angular-aria": "=1.4.5",
+    "angular-messages": "=1.4.5",
+    "angular-resource": "=1.4.5",
+    "angular-sanitize": "=1.4.5",
+    "angular-ui-router": "=0.2.15",
+    "angular-ui-router-anim-in-out": "^1.0.2"
+  },
+  "resolutions": {
+    "angular": "=1.4.5"
+  }
+}

@@ -1,0 +1,1 @@
+ //= require ../../../admin/src/manifest

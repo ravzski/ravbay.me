@@ -1,0 +1,23 @@
+.form-group
+  margin-bottom: 15px
+  .form-control
+    width: 100%
+    padding: 5px 0px
+    border: 0px
+    border-bottom: 1px solid $gray-light
+    &:focus
+      outline: none
+      border-bottom: 1px solid $gray
+      box-shadow: 0 1px 0 0 $gray
+      +transition(all 0.3s)
+    &.error
+      border-bottom: 2px solid $danger
+
+  textarea
+    resize: none
+
+.submit-row
+  margin-top: 15px
+  text-align: right
+  .btn
+    padding: 10px 30px

@@ -1,0 +1,39 @@
+=buttons($color, $bg-color)
+  color: $color
+  background-color: $bg-color
+  border: 0px
+
+  &:hover, &:focus, &:active
+    color: #fff
+    background-color: mix(black, $bg-color, 15%)
+    cursor: pointer
+
+  &.no-hover
+    &:hover, &:focus, &:active
+      color: $color
+      background-color: $bg-color
+
+
+.btn-close
+  background: url('/images/close.svg')
+  min-width: 32px
+  min-height: 32px
+  position: absolute
+  right: 10px
+  background-repeat: no-repeat
+  top: 30px
+
+.btn
+  border: 0px
+  border-radius: 2px
+  padding: 7px 15px
+  font-size: 12px
+  font-weight: 200
+  line-height: 1.42857143
+  text-align: center
+  white-space: nowrap
+  vertical-align: middle
+  font-weight: 200
+
+.btn-default
+  +buttons(#fff,$gray)

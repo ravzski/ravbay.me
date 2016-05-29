@@ -1,0 +1,39 @@
+.contact-container.anim-slide-right
+  .panel
+    .panel-head
+      h1 Contact
+      a.btn-close href="/"
+    .panel-body
+      p
+        |I am open to remote based opportunities but not to multil-level marketing shenanigans.
+        br
+        |Reach me here or at
+        strong
+          a href="mailto:ravzski@gmail.com"  hi@ravbay.me
+
+      form.fade name="form" ng-if="showForm" ng-animate="'fade'"
+        .form-group
+          input.form-control(
+            type="email"
+            placeholder="Email"
+            required=""
+            ng-model="msg.email"
+            ng-enter="submit(form)"
+            name="email"
+            ng-class="{error: (form.email.$error.required || form.$error.email) && form.$submitted}")
+
+        .form-group
+          textarea.form-control(
+            placeholder="Message here, you must"
+            required=""
+            ng-model="msg.content"
+            rows="10"
+            ng-enter="submit(form)"
+            name="message"
+            ng-class="{error: form.message.$error.required && form.$submitted}")
+
+        .submit-row
+          a.btn.btn-default ng-click="submit(form)" Say Hi
+
+      .thank-you-content.fade  ng-if="!showForm" ng-animate="'fade'"
+        h2 I'll get back to you as soon as I can.

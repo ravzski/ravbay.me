@@ -1,0 +1,40 @@
+body
+  font-family: $primary-font
+  font-size: 12px
+  background-color: $primary-bg
+  color: $gray
+  overflow: hidden
+  width: 100%
+
+a
+  color: $gray
+  outline:none
+  text-decoration: none
+  &:hover
+    text-decoration: none
+    color: $gray-light
+  &:focus
+    color: $gray
+    text-decoration: none
+
+.main-container
+  position: absolute
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+  z-index: 0
+
+[ng-click],
+[data-ng-click],
+[x-ng-click],[ui-sref]
+  cursor: pointer
+
+
+p
+  font-size: 14px
+  line-height: 1.428571429
+
+ul.reset
+  +ul-reset
+  &.inline

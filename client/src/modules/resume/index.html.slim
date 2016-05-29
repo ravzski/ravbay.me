@@ -1,0 +1,44 @@
+.resume-container.anim-slide-left
+  .panel.panel-condensed
+    .panel-head
+      h1 Resume
+      a.btn-close href="/"
+    .panel-body ng-style="resumeHeight"
+      .about-container
+        p.about
+          |Hi, my name is
+          strong  Rav.
+          |  I am an end to end software engineer specialising in web and mobile development.
+          |  I do everything from UI/UX, frontend, backend APIs, to server and VPN setups.
+
+        .stack-container
+          strong  Techs I'm interested now:
+          .stacks ng-repeat="obj in stacks"
+            span ng-bind="obj.category"
+            span.techs ng-bind="obj.techs"
+
+        p.about
+          |More interested in how I code? check this site's source
+          strong
+            a href="https://github.com/ravzski/ravbay.me" target="_blank" here.
+          br
+          |This site is written in
+          strong  AngularJS
+          |  and
+          strong  Rails
+          |  for the API
+          br
+          |I am open for remote based opportunities, be it part time or full time.
+
+      .education-container
+        h3 Education
+        .resume-entry ng-repeat="obj in ::degrees"
+          .heading ng-bind="obj.details"
+          .sub-heading ng-bind="obj.school"
+
+      .experiences-container
+        h3 Experience
+        .resume-entry ng-repeat="obj in ::experiences"
+          .heading ng-bind="obj.title"
+          .sub-heading ng-bind="obj.company"
+          .date ng-bind="obj.description"
